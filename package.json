@@ -1,12 +1,28 @@
 {
   "name": "dragonbones-pixi",
   "version": "5.7.0",
-  "main": "",
   "scripts": {
-    "build": "tsc & uglifyjs ./out/dragonBones.js -o ./out/dragonBones.min.js -m"
+    "build": "tsc",
+    "start": "tsc --watch",
+    "link": "mkdir link; mkdir -p lib; cd link; ln -s ../lib .; ln -s ../package.json ."
+  },
+  "main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"files": [
+		"lib/*"
+	],
+  "sideEffects": false,
+  "peerDependencies": {
+    "@pixi/constants": "^6.4.0",
+    "@pixi/core": "^6.4.0",
+    "@pixi/display": "^6.4.0",
+    "@pixi/graphics": "^6.4.0",
+    "@pixi/math": "^6.4.0",
+    "@pixi/mesh-extras": "^6.4.0",
+    "@pixi/settings": "^6.4.0",
+    "@pixi/sprite": "^6.4.0"
   },
   "devDependencies": {
-    "typescript": "^3.3.4000",
-    "uglify-js": "^3.5.2"
+    "typescript": "^4.7.3"
   }
 }
