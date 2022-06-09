@@ -1,6 +1,12 @@
 {
-  "name": "dragonbones-pixi",
-  "version": "5.7.0",
+  "name": "@md5crypt/dragonbones-pixi",
+  "repository": "git://github.com/md5crypt/dragonbones-pixi.git",
+  "version": "5.8.0",
+  "license": "MIT",
+  "keywords": [
+		"dragonbones",
+		"pixi.js"
+	],
   "scripts": {
     "build": "tsc",
     "start": "tsc --watch",
